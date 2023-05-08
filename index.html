@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ---------------Header---------------  -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/Portfolio.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Conatct Me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vishnuvarathan</span></h1>
+                <p class="border-text">Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About---------------  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/Profile1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Having worked for a product-based firm and with Industry 4.0 projects, I'm looking for a
+                        challenging
+                        role at a respectable company where I can further develop my learning, skills, and expertise.
+                        Backend web development and Mobile applications are two areas in which I'm really interested.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Node JS</li>
+                            <li>Javascript</li>
+                            <li>Firebase</li>
+                            <li>Google Cloud Platform(GCP)</li>
+                            <li>MongoDb</li>
+                            <li>Web Pentesting</li>
+                            <li>Problem solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>BLP Industry.AI Private Limited</li>
+                            <li><span>2021 Digital Nuture</span><br>Cognizant</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>B.E Rajalakshmi Engineering College</li>
+                            <li><span>2017 - 2018(Higher Secondary)</span><br>Neelan Matric Hr.sec School</li>
+                            <li><span>2017 - 2018(SSLC)</span><br>Neelan Matric Hr.sec School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------services--------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Node Package</h2>
+                    <p>In order to make it simple for developers to connect to databases and simply query and alter documents, I developed a highly functional and user-friendly Node Package Manager. Developers can complete these jobs faster and more accurately with this npm, freeing them up to concentrate on other crucial project components.</p>
+                    <a href="https://www.npmjs.com/package/blp-backend-module" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>React Native</h2>
+                    <p>I created a React Native application,which allowed me to learn the fundamentals of native app development, the app calculates the overall equipment efficiency of a machine and provides production quantity insights for the industry. The app also alerts users to any issues with the machine.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-industry"></i>
+                    <h2>Industry 4.0</h2>
+                    <p>I have worked on Industry 4.0 projects developing predictive,maintenance algorithms, which can detect potential equipment failures before they occur, and thereby prevent costly downtime and repair work.I have also worked extensively on calculating overall equipment efficiency (OEE) for clients such as Jindal Steel and Volvo.</p>
+                    <a href="https://industry-ai.com/" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------contanct------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vishnuvarathan2609@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 6383832405</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vishnuvarathan-b-623684205/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Vishnuvarathan26" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                        <a href="https://medium.com/@Vicky_2619" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://www.instagram.com/_vishnoo._/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/Vishnuvarathan_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
