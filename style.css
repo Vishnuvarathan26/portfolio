@@ -137,6 +137,7 @@ nav ul li a:hover:after {
     /* opacity: 0; */
     width: 90%;
     border-radius: 15px;
+    margin-top:80px;
 }
 
 .about-col-2 {
