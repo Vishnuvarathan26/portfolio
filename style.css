@@ -147,6 +147,7 @@ nav ul li a:hover:after {
 .about-col-2 p {
     margin-top: 20px;
     letter-spacing: 0.3px;
+    line-height: 1.6;
 }
 
 .sub-title {
@@ -235,6 +236,9 @@ nav ul li a:hover:after {
     margin-bottom: 15px;
 }
 
+.services-list div p{
+    line-height: 1.6;
+}
 .services-list div a {
     text-decoration: none;
     font-size: 14px;
