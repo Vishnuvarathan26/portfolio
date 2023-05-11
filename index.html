@@ -15,6 +15,7 @@
         }
     </style>
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             </nav>
             <div class="header-text">
                 <h1>Hi, I'm <span>Vishnuvarathan</span></h1>
-                <p class="border-text">Developer</p>
+                <p class="border-text type-text"></p>
             </div>
         </div>
     </div>
@@ -162,6 +163,20 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab")
         }
+    </script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('.type-text', {
+            strings: ['Developer'],
+            typeSpeed: 120,
+            loop:true,
+            backDelay: 700,
+            backSpeed: 120,
+            showCursor: false,
+        });
     </script>
 </body>
 
