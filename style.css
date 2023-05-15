@@ -23,6 +23,18 @@
     src: url(assets/fonts/SFProText-Bold.ttf) format("opentype");
 }
 
+/* -----------Key frames--------------------- */
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +55,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
+    animation: fade-up 0.8s;
 }
 
 .container {
